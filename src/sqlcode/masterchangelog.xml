@@ -13,19 +13,6 @@
    <includeAll path="main/200_dml" relativeToChangelogFile="true"/>
 
 
-    
-    <changeSet author="amalik" id="insert_data" runOnChange="true" runAlways="true">
-        <sqlFile path="main/PLS/insert_data.sql"
-            relativeToChangelogFile="true"
-            endDelimiter="/"
-            stripComments="false"
-            />
-        <rollback>
-            <sql>
-                 DROP PROCEDURE insert_data;
-            </sql>
-        </rollback>
-    </changeSet>
 
 
 </databaseChangeLog>

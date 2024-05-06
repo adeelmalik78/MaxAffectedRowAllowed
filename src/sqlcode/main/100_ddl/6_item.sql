@@ -7,8 +7,9 @@ CREATE TABLE item (
     order_id INT,
     product_id INT,
     quantity INT,
-    total DECIMAL(20, 2),
-    FOREIGN KEY(order_id) REFERENCES purchase_order(id),
-    FOREIGN KEY(product_id) REFERENCES product(id)
+    total DECIMAL(20, 2)
+    -- ,
+    -- FOREIGN KEY(order_id) REFERENCES purchase_order(id),
+    -- FOREIGN KEY(product_id) REFERENCES product(id)
 );
 --rollback DROP TABLE item
